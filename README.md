@@ -379,3 +379,7 @@ The model confidence score is the highest among models evaluated so far. We deci
 # Model evaluation
 
 We can now rank our evaluation of all the models to choose the best one for our problem. While both Decision Tree and Random Forest score the same, we choose to use Random Forest as they correct for decision trees' habit of overfitting to their training set.
+
+# Conclusion
+
+Hope you've liked the submisson and detailing. Would love to hear your thoughts. Please comment with any suggested input.
