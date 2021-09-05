@@ -110,3 +110,22 @@ Parent = mother, father
 Child = daughter, son, stepdaughter, stepson
 
 Some children travelled only with a nanny, therefore parch=0 for them.
+
+# Acquire data
+
+The Python Pandas packages helps us work with our datasets. We start by acquiring the training and testing datasets into Pandas DataFrames. We also combine these datasets to run certain operations on both datasets together.
+
+# Analyze by describing data
+
+Pandas also helps describe the datasets answering following questions early in our project.
+
+## Which features are categorical?
+
+These values classify the samples into sets of similar samples. Within categorical features are the values nominal, ordinal, ratio, or interval based? Among other things this helps us select the appropriate plots for visualization.
+
+### Categorical: Survived, Sex, and Embarked. Ordinal: Pclass.
+Which features are numerical?
+
+### Which features are numerical? These values change from sample to sample. Within numerical features are the values discrete, continuous, or timeseries based? Among other things this helps us select the appropriate plots for visualization.
+
+Continous: Age, Fare. Discrete: SibSp, Parch.
