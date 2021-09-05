@@ -1,5 +1,8 @@
 # Titanic Data Science Solutions
 
+- On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew. Translated 32% survival rate.
+- One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew.
+- Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.
 
 ## Workflow stages
 
@@ -27,11 +30,6 @@ Competition sites like Kaggle define the problem to solve or questions to ask wh
 
 > Knowing from a training set of samples listing passengers who survived or did not survive the Titanic disaster, can our model determine based on a given test dataset not containing the survival information, if these passengers in the test dataset survived or not.
 
-We may also want to develop some early understanding about the domain of our problem. This is described on the [Kaggle competition description page here](https://www.kaggle.com/c/titanic). Here are the highlights to note.
-
-- On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew. Translated 32% survival rate.
-- One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew.
-- Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.
 
 ## Workflow goals
 
@@ -50,3 +48,65 @@ The data science solutions workflow solves for seven major goals.
 **Creating.** Can we create new features based on an existing feature or a set of features, such that the new feature follows the correlation, conversion, completeness goals.
 
 **Charting.** How to select the right visualization plots and charts depending on nature of the data and the solution goals.
+
+# Overview
+
+## The data has been split into two groups:
+
+training set (train.csv) & test set (test.csv)
+
+The training set should be used to build your machine learning models. For the training set, we provide the outcome (also known as the “ground truth”) for each passenger. Your model will be based on “features” like passengers’ gender and class. You can also use feature engineering to create new features.
+
+The test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for each passenger. It is your job to predict these outcomes. For each passenger in the test set, use the model you trained to predict whether or not they survived the sinking of the Titanic.
+
+We also include gender_submission.csv, a set of predictions that assume all and only female passengers survive, as an example of what a submission file should look like.
+
+Data Dictionary
+
+Variable Definition Key
+
+survival Survival 0 = No, 1 = Yes
+
+pclass Ticket class 1 = 1st, 2 = 2nd, 3 = 3rd
+
+sex Sex
+
+Age Age in years
+
+sibsp # of siblings / spouses aboard the Titanic
+
+parch # of parents / children aboard the Titanic
+
+ticket Ticket number
+
+fare Passenger fare
+
+cabin Cabin number
+
+embarked Port of Embarkation C = Cherbourg, Q = Queenstown, S = Southampton
+
+Variable Notes
+
+pclass: A proxy for socio-economic status (SES)
+
+1st = Upper
+
+2nd = Middle
+
+3rd = Lower
+
+age: Age is fractional if less than 1. If the age is estimated, is it in the form of xx.5
+
+sibsp: The dataset defines family relations in this way...
+
+Sibling = brother, sister, stepbrother, stepsister
+
+Spouse = husband, wife (mistresses and fiancés were ignored)
+
+parch: The dataset defines family relations in this way...
+
+Parent = mother, father
+
+Child = daughter, son, stepdaughter, stepson
+
+Some children travelled only with a nanny, therefore parch=0 for them.
