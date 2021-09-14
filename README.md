@@ -6,7 +6,7 @@
 
 ## Workflow stages
 
-The competition solution workflow goes through seven stages described in the Data Science Solutions book.
+The Competition solution workflow goes through seven stages described in the Data Science Solutions book.
 
 1. Question or problem definition.
 2. Acquire training and testing data.
